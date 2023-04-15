@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="./js/script.js"></script>
+    <title>Tienda</title>
+</head>
+<body>
+    <h1>Carrito de Compras</h1>
+    <h2>Productos Disponibles</h2>    
+    <div id="productos">
+        
+        <div class="card">
+            <img src="./img/camisa.jpg" alt="Camisa">
+            <div class="product-info">
+                <h3>Camisa</h3>
+                <p class="price">$1500</p>
+                <button onclick="agregarAlCarrito('Camisa')">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/pantalon.jpg" alt="Pantalón">
+            <div class="product-info">
+                <h3>Pantalón</h3>
+                <p class="price">$2000</p>
+                <button onclick="agregarAlCarrito('Pantalon')">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/gorra.jpg" alt="Gorra">
+            <div class="product-info">
+                <h3>Gorra</h3>
+                <p class="price">$1000</p>
+                <button onclick="agregarAlCarrito('Gorra')">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/zapatillas.jpg" alt="Zapatillas">
+            <div class="product-info">
+                <h3>Zapatillas</h3>
+                <p class="price">$2500</p>
+                <button onclick="agregarAlCarrito('Zapatillas')">Agregar al Carrito</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="listaProductos"></ul>
+        <li><button id="mostrarCarritoButton">Mostrar carrito</button></li>
+        <div id="carritoTotal" class="oculto">
+            <h3>Total: <span id="total"></span>$</h3>
+            <ul id="items"></ul>
+            <button id="vaciarCarritoButton">Vaciar carrito</button>
+        </div>
+    </div>
+
+</body>
+</html>
